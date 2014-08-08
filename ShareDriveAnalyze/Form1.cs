@@ -314,7 +314,7 @@ namespace alphaDrive
             b.Save(instanceGraph, System.Drawing.Imaging.ImageFormat.Png);
 
             Image c = zgc.GetImage();
-            b.Save(sizeGraph, System.Drawing.Imaging.ImageFormat.Png);
+            c.Save(sizeGraph, System.Drawing.Imaging.ImageFormat.Png);
 
             //zgc.SaveAs(instanceGraph);
             //zgc2.SaveAs(sizeGraph);
