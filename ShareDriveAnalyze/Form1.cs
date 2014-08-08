@@ -313,7 +313,7 @@ namespace alphaDrive
             Image b = zgc.GetImage();
             b.Save(instanceGraph, System.Drawing.Imaging.ImageFormat.Png);
 
-            Image c = zgc.GetImage();
+            Image c = zgc2.GetImage();
             c.Save(sizeGraph, System.Drawing.Imaging.ImageFormat.Png);
 
             //zgc.SaveAs(instanceGraph);
@@ -1015,7 +1015,9 @@ namespace alphaDrive
                 }
             }
 
-            results[0] = dirs[currentHighIndex];
+            if(dirs.Count > 0)
+                results[0] = dirs[currentHighIndex];
+
             results[1] = currentHigh;
 
             return results;
